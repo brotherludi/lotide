@@ -1,10 +1,19 @@
+const eqObjects = function (object1, object2) {
+  if (JSON.stringify(object1) === JSON.stringify(object2)) {
+    return true
+  } else {
+    return false
+  }
+}
+
 const assertEqual = function (actual, expected) {
-  if (actual === expected) {
+  if (eqObjects(actual, expected)) {
     console.log(`✅Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
 
 const countLetters = function (sentence) {
   //   let count = {};
