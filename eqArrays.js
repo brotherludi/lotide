@@ -1,11 +1,8 @@
 //first compare 2 arrays
 const eqArrays = function (array1, array2) {
-  if (JSON.stringify(array1) === JSON.stringify(array2)) {
-    return true
-  } else {
-    return false
-  }
+    return JSON.stringify(array1) === JSON.stringify(array2)
 }
+
 //then compare 'array compare result' to expected 
 const assertEqual = function (eqArrays, expected) {
   if (eqArrays === expected) {
@@ -15,4 +12,9 @@ const assertEqual = function (eqArrays, expected) {
   }
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+module.exports = eqArrays;
+
+// module.exports = {
+//   eqArrays:eqArrays,
+//   assertEqual:assertEqual,
+// }
