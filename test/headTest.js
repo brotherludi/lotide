@@ -6,6 +6,7 @@
 // assertEqual(head([7]),7);
 // assertEqual(head([]));
 
+
 const assert = require('chai').assert;
 const head   = require('../head');
 
