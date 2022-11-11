@@ -43,4 +43,3 @@ The following functions are currently implemented:
   `tail`: A function to returns the tail of an array.
   `takeUntil`: Collecting items from an array until the callback returns a truthy value.
   `without`: Return a subset of a given array, removing unwanted elements.
-  
